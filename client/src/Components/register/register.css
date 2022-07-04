@@ -1,0 +1,837 @@
+html,
+body {
+  font-family	: "beIn";
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  /* background-image: url("background.png"); */
+
+  /* background-color: rgb(36, 36, 95); */
+  
+}
+main {
+  padding: 0;
+}
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("background.png");
+  background-size: cover;
+  /* background-size: contain; */
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -20px;
+  padding: 1px;
+  margin: 0;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.title {
+  font-family	: "beIn";
+
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 2em;
+  /* width: 1349px;
+    height: 150px; */
+  margin-right: auto;
+  margin-left: auto;
+  list-style-position: inside;
+  /* position: relative; */
+  position: static;
+  top: 98px;
+  margin-bottom: 80px;
+  font-weight: normal;
+  width: 100%;
+  height: 80%;
+  margin-top: 5%;
+  margin-bottom: -360px;
+  /* font-family: 'Noto Kufi Arabic', sans-serif; */
+
+  /* margin-top: 4px; */
+
+  /* margin-bottom: 6%;
+    line-height: normal; */
+}
+
+.global {
+  padding: 0;
+}
+.line2 {
+  margin-top: 2%;
+  margin-bottom: 50%;
+}
+
+.formulaire {
+  background-color: black;
+  width: 280px;
+  height: 560px;
+  margin-top: "20%";
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 40px;
+  /* margin-top: 4px; */
+  padding: 18px;
+}
+
+#user {
+  border-radius: 100px;
+  width: 240px;
+  height: 36px;
+  margin-top: 3%;
+  border-color: black;
+  /* font-size:small */
+  text-transform: capitalize;
+  font-size: 100%;
+}
+
+#userEmail {
+  border-radius: 100px;
+  width: 240px;
+  height: 38px;
+  margin-top: 3%;
+  border-color: black;
+  font-size: 100%;
+
+  /* font-size:small */
+}
+
+#date {
+  border-radius: 100px;
+  width: 240px;
+  height: 36px;
+  margin-top: 3%;
+  border-color: black;
+  font-size: 100%;
+}
+
+#gender {
+  border-radius: 20px;
+  width: 170px;
+  height: 20px;
+  margin-top: 2%;
+  border-color: black;
+}
+
+.validate {
+  color: white;
+  background-color: black;
+  border-radius: 100px;
+  margin-top: 6%;
+  width: 290px;
+  height: 60px;
+  cursor: pointer;
+  border-color: black;
+  font-size: 2em;
+  margin-bottom: 5%;
+  /* margin-left: -67%; */
+}
+
+::placeholder {
+  color: rgb(20, 20, 20);
+  font-size: 0.75em;
+  margin-right: 20%;
+}
+
+img {
+  height: 80%;
+  width: 26%;
+  object-fit: contain;
+  /* margin-top: 1%; */
+  margin-bottom: -2%;
+  margin-left: -2%;
+  margin-top: -70%;
+
+  /* margin-right: auto; */
+  /* margin-left:auto */
+}
+.logoAsel {
+  height: 200px;
+  width: 200px;
+}
+
+h5 {
+  font-size: 26px;
+  margin-top: 39%;
+  color: white;
+  font-weight: normal;
+}
+
+.sexe {
+  color: teal;
+  font-size: 0.75em;
+}
+
+.infobulle {
+  position: relative; /* les .infobulle deviennent référents */
+  top: 50%;
+  cursor: help;
+  font-size: "1.5em";
+  position: "relative";
+  top: "10%";
+}
+
+/* on génère un élément :after lors du survol et du focus :*/
+
+.infobulle:hover::after,
+.infobulle:focus::after {
+  content: attr(aria-label); /* on affiche aria-label */
+  position: absolute;
+  top: 0.2em;
+  left: 132%;
+  transform: translateX(-50%); /* on centre horizontalement  */
+  z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+  white-space: nowrap; /* on interdit le retour à la ligne */
+  color: white;
+}
+
+.nameStyle {
+  margin-top: "7%";
+}
+
+@media screen and (width: 768px) {
+  .App {
+    /* height: 2000%; */
+  }
+  img {
+    margin-bottom: -20%;
+  }
+
+  #demo-multiple-name{
+    background-color: white;
+border-radius: 100px;
+width: 242px;
+height: 40px;
+font-size: 100%;
+margin-left: 14px;
+margin-top: 3px;
+}
+
+  .formulaire {
+    margin-top: 16%;
+    height: 520px;
+  }
+  .validate {
+    margin-top: 4%;
+    margin-bottom: 10%;
+  }
+  h5 {
+    margin-top: -0%;
+    font-size: 20px;
+    margin-bottom: 4%;
+  }
+}
+
+@media screen and (width: 375px) {
+  .title {
+    font-size: 1em;
+  }
+  img {
+    margin-bottom: -20%;
+    margin-top: 200px;
+  }
+
+  .formulaire {
+    margin-top: 14%;
+    width: 170px;
+    height: 270px;
+  }
+  .validate {
+    width: 160px;
+    height: 19px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-size: 0.85em;
+  }
+  h5 {
+    margin-top: -16%;
+    font-size: 7px;
+    margin-top: -10%;
+  }
+  #user,
+  #userEmail,
+  #date {
+    border-radius: 100px;
+    width: 160px;
+    height: 16px;
+    font-size: 85%;
+  }
+  body {
+    background-color: rgb(31, 49, 94);
+    }
+
+}
+
+@media screen and (min-width: 391px) and (max-width: 414px) {
+  .title {
+    font-size: 1em;
+  }
+  img {
+    margin-bottom: -20%;
+    margin-top: 200px;
+  }
+
+  .formulaire {
+    margin-top: 14%;
+    width: 170px;
+    height: 270px;
+  }
+  .validate {
+    width: 160px;
+    height: 19px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-size: 0.85em;
+  }
+  h5 {
+    font-size: 10px;
+    margin-top: -2%;
+  }
+  #user,
+  #userEmail,
+  #date {
+    border-radius: 100px;
+    width: 160px;
+    height: 16px;
+    font-size: 75%;
+  }
+
+  body {
+    background-color: rgb(31, 49, 94);
+    }
+}
+
+@media screen and (width: 412px) {
+  .title {
+    font-size: 1em;
+  }
+  img {
+    margin-bottom: -20%;
+    margin-top: 200px;
+  }
+
+  .formulaire {
+    margin-top: 14%;
+    width: 170px;
+    height: 270px;
+  }
+  .validate {
+    width: 160px;
+    height: 19px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-size: 0.85em;
+  }
+  h5 {
+    margin-top: -2%;
+    font-size: 10px;
+  }
+  #user,
+  #userEmail,
+  #date {
+    border-radius: 100px;
+    width: 160px;
+    height: 16px;
+    font-size: 85%;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 310px) {
+  .title {
+    font-size: 0.75em;
+  }
+  img {
+    margin-bottom: -20%;
+    margin-top: 250px;
+  }
+
+  .formulaire {
+    margin-top: 14%;
+    width: 170px;
+    height: 270px;
+  }
+  .validate {
+    width: 160px;
+    height: 19px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-size: 0.85em;
+  }
+  h5 {
+    font-size: 10px;
+    margin-top: -7%;
+  }
+  #user,
+  #userEmail,
+  #date {
+    border-radius: 100px;
+    width: 160px;
+    height: 16px;
+    font-size: 65%;
+  
+  }
+  body {
+    background-color: rgb(31, 49, 94);
+    }
+
+}
+@media screen and (min-width: 311px) and (max-width: 360px) {
+  .title {
+    font-size: 0.75em;
+  }
+  img {
+    margin-bottom: -20%;
+    margin-top: 250px;
+  }
+
+  .formulaire {
+    margin-top: 14%;
+    width: 170px;
+    height: 270px;
+  }
+  .validate {
+    width: 160px;
+    height: 19px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-size: 0.85em;
+  }
+  h5 {
+    font-size: 10px;
+    margin-top: -7%;
+  }
+  #user,
+  #userEmail,
+  #date {
+    border-radius: 100px;
+    width: 160px;
+    height: 16px;
+    font-size: 65%;
+  }
+
+  body {
+    background-color: rgb(31, 49, 94);
+    }
+}
+
+@media screen and (width: 540px) {
+  .title {
+    font-size: 1.25em;
+  }
+  img {
+    margin-bottom: -41%;
+  }
+
+  .formulaire {
+    margin-top: 36%;
+    width: 220px;
+    height: 370px;
+  }
+  #user,
+  #userEmail,
+  #date {
+    border-radius: 100px;
+    width: 200px;
+    height: 24px;
+    font-size: 75%;
+  }
+  .validate {
+    margin-top: 4%;
+    margin-bottom: 10%;
+    width: 200px;
+    height: 22px;
+    font-size: 1em;
+  }
+  h5 {
+    margin-top: -1%;
+    font-size: 14px;
+    margin-bottom: 4%;
+  }
+  body {
+    background-color: rgb(31, 49, 94);
+    }
+}
+/* @media screen and (width : 820px) {
+        img {
+          margin-bottom: -20%;
+        }
+
+        .formulaire{
+          margin-top: 16%;
+          height: 520px;
+        }
+        .validate {
+            margin-top: 4%;
+            margin-bottom: 10%;
+        }
+        h5 {
+          margin-top: 0%;
+          font-size: 20px;
+          margin-bottom: 4%;
+        }
+
+    } */
+
+/* @media screen and (width: 360px) {
+  .title {
+    font-size: 0.85em;
+  }
+  img {
+    margin-bottom: -19%;
+    margin-top: 204px;
+  }
+
+  .formulaire {
+    margin-top: 14%;
+    width: 170px;
+    height: 270px;
+  }
+  .validate {
+    width: 160px;
+    height: 19px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-size: 0.85em;
+  }
+  h5 {
+    margin-top: -16%;
+    font-size: 9px;
+    margin-top: -10%;
+  }
+  #user,
+  #userEmail,
+  #date {
+    border-radius: 100px;
+    width: 160px;
+    height: 16px;
+    font-size: 85%;
+  }
+} */
+
+@media screen and (width: 393px) {
+  .title {
+    font-size: 0.95em;
+  }
+  img {
+    margin-bottom: -20%;
+    margin-top: 200px;
+  }
+
+  .formulaire {
+    margin-top: 14%;
+    width: 170px;
+    height: 270px;
+  }
+  .validate {
+    width: 160px;
+    height: 19px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-size: 0.85em;
+  }
+  h5 {
+    margin-top: -16%;
+    font-size: 10px;
+    margin-top: -6%;
+  }
+  #user,
+  #userEmail,
+  #date {
+    border-radius: 100px;
+    width: 160px;
+    height: 16px;
+    font-size: 85%;
+  }
+}
+@media screen and (min-width: 361px) and (max-width: 390px) {
+  .title {
+    font-size: 0.95em;
+  }
+  img {
+    margin-bottom: -20%;
+    margin-top: 200px;
+  }
+
+  .formulaire {
+    margin-top: 14%;
+    width: 170px;
+    height: 270px;
+  }
+  .validate {
+    width: 160px;
+    height: 19px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-size: 0.85em;
+  }
+  h5 {
+    font-size: 10px;
+    margin-top: -7%;
+  }
+  #user,
+  #userEmail,
+  #date {
+    border-radius: 100px;
+    width: 160px;
+    height: 16px;
+    font-size: 65%;
+  }
+
+  body {
+    background-color: rgb(31, 49, 94);
+    }
+}
+@media screen and (width: 414px) {
+  .title {
+    font-size: 0.95em;
+  }
+  img {
+    margin-bottom: -17%;
+    margin-top: 186px;
+  }
+
+  .formulaire {
+    margin-top: 14%;
+    width: 170px;
+    height: 270px;
+  }
+  .validate {
+    width: 160px;
+    height: 19px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-size: 0.85em;
+  }
+  h5 {
+    font-size: 11px;
+    margin-top: -4%;
+  }
+  #user,
+  #userEmail,
+  #date {
+    border-radius: 100px;
+    width: 160px;
+    height: 16px;
+    font-size: 85%;
+  }
+}
+@media screen and (width: 912px) {
+  img {
+    margin-bottom: -20%;
+  }
+
+  .formulaire {
+    margin-top: 16%;
+    height: 520px;
+  }
+  .validate {
+    margin-top: 4%;
+    margin-bottom: 10%;
+  }
+  h5 {
+    margin-top: 8%;
+    font-size: 20px;
+    margin-bottom: 8%;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+  img {
+    margin-bottom: -4%;
+  }
+  h5 {
+    font-size: 27px;
+    margin-bottom: 6%;
+  }
+}
+
+@media screen and (min-width: 913px) and (max-width: 1099px) {
+  img {
+    margin-bottom: -13%;
+  }
+  .formulaire {
+    margin-top: 9%;
+  }
+  h5 {
+    font-size: 18px;
+    margin-top: 17%;
+  }
+
+  body {
+    background-color: rgb(31, 49, 94);
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 912px) {
+  /* .app {
+           width: 1180px;
+         } */
+  img {
+    margin-bottom: -16%;
+  }
+  .formulaire {
+    margin-top: 11%;
+  }
+  h5 {
+    font-size: 15px;
+    margin-top: 8%;
+  }
+
+  body {
+    background-color: rgb(31, 49, 94);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 819px) {
+  img {
+    margin-bottom: -21%;
+  }
+  .formulaire {
+    margin-top: 17%;
+  }
+  h5 {
+    font-size: 15px;
+    margin-top: 0%;
+  }
+
+  body {
+    background-color: rgb(31, 49, 94);
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 768px) {
+  .title {
+    font-size: 1.15em;
+  }
+  img {
+    margin-bottom: -41%;
+  }
+  .formulaire {
+    margin-top: 36%;
+    width: 220px;
+    height: 370px;
+  }
+
+  #demo-multiple-name{
+        background-color: white;
+    border-radius: 100px;
+    width: 242px;
+    height: 40px;
+    font-size: 100%;
+    margin-left: 14px;
+    margin-top: 3px;
+  }
+
+
+  #user,
+  #userEmail,
+  #date, #demo-multiple-name
+  {
+    border-radius: 100px;
+    width: 200px;
+    height: 24px;
+    font-size: 75%;
+  }
+  .validate {
+    margin-top: 4%;
+    margin-bottom: 10%;
+    width: 200px;
+    height: 22px;
+    font-size: 1em;
+  }
+  h5 {
+    font-size: 11px;
+    margin-top: 8%;
+  }
+
+  body {
+    background-color: rgb(31, 49, 94);
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 539px) {
+  .title {
+    font-size: 1.25em;
+  }
+  img {
+    margin-bottom: -60%;
+  }
+  .formulaire {
+    margin-top: 54%;
+    width: 200px;
+    height: 320px;
+  }
+  #user,
+  #userEmail,
+  #date {
+    border-radius: 100px;
+    width: 190px;
+    height: 20px;
+    font-size: 75%;
+  }
+  .validate {
+    margin-top: 4%;
+    margin-bottom: 10%;
+    width: 200px;
+    height: 22px;
+    font-size: 1em;
+  }
+  h5 {
+    font-size: 8px;
+    margin-top: -8%;
+    margin-bottom: 6%;
+  }
+
+  body {
+    background-color: rgb(31, 49, 94);
+    }
+}
+
+@media screen and (min-width: 260px) and (max-width: 279px) {
+  .title {
+    font-size: 0.75em;
+  }
+  img {
+    margin-bottom: -17%;
+    margin-top: 252px;
+  }
+
+  .formulaire {
+    margin-top: 14%;
+    width: 170px;
+    height: 270px;
+  }
+  .validate {
+    width: 160px;
+    height: 19px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    font-size: 0.85em;
+  }
+  h5 {
+    font-size: 5px;
+    margin-top: 12%;
+    margin-bottom: 9%;
+  }
+  #user,
+  #userEmail,
+  #date {
+    border-radius: 100px;
+    width: 160px;
+    height: 16px;
+    font-size: 65%;
+  }
+
+  body {
+    background-color: rgb(31, 49, 94);
+    }
+}
